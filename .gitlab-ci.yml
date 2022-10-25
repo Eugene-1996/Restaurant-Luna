@@ -59,4 +59,5 @@ deploy:
   script:
     - docker-compose -f docker-compose.deploy.yml pull
     - docker-compose -f docker-compose.deploy.yml down --remove-orphans
+    - docker volume rm myluna_build
     - docker-compose -f docker-compose.deploy.yml up -d
