@@ -5,9 +5,8 @@ from review.views import RestaurantReviews
 from review.views import UserReviews
 from review.views import SingleReview
 from review.views import PostReview
+
 from review.views import Rating
-
-
 
 urlpatterns = [
     path('', AllReviews.as_view()),

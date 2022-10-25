@@ -1,4 +1,4 @@
-from rest_framework.generics import GenericAPIView, ListAPIView
+from rest_framework.generics import GenericAPIView
 from rest_framework.response import Response
 
 from user.models import User
@@ -40,13 +40,6 @@ class SingleUser(GenericAPIView):
         instance = self.get_object()
         serializer = UserSerializer(instance)
         return Response(serializer.data)
-
-
-class PatchUser(GenericAPIView):
-    queryset = User.objects.all()
-
-    def patch(self, request, *args, **kwargs):
-        instance = User.objects.filter(username=self.request.user.username)
 
 
 class SearchRestaurantView(GenericAPIView):

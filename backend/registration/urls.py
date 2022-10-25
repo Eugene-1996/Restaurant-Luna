@@ -7,4 +7,3 @@ urlpatterns = [
     path('', UserRegistration.as_view()),
     path('validation/', Validation.as_view()),
 ]
-
