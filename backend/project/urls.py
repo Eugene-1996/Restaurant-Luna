@@ -18,7 +18,7 @@ from django.urls import path, include
 from rest_framework_simplejwt import views
 
 urlpatterns = [
-    path('backend/admin/', admin.site.urls),
+    path('api/admin/', admin.site.urls),
     path('api/', include('user.urls')),
     path('api/reviews/', include('review.urls')),
     path('api/restaurants/', include('restaurant.urls')),

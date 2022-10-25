@@ -24,7 +24,7 @@ RUN chmod +x ./scripts
 RUN /opt/conda/bin/conda env create -f /backend/requirements.yml
 
 # we set the path were all the python pacakages are
-ENV PATH /opt/conda/envs/mymotion/bin:$PATH
+ENV PATH /opt/conda/envs/myluna/bin:$PATH
 
 # activate app
 RUN echo "source activate myluna" >~/.bashrc
