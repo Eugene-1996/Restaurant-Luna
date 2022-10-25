@@ -162,4 +162,4 @@ EMAIL_HOST_USER = 'team5motion.backend@gmail.com'  # os.environ.get('EMAIL_HOST_
 EMAIL_HOST_PASSWORD = 'enyukkpoqtqsbsxt'  # os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_PORT = 587  # os.environ.get('EMAIL_PORT')
 
-CSRF_TRUSTED_ORIGINS = ['http://138.197.178.222']
+CSRF_TRUSTED_ORIGINS = ['http://138.197.178.222', 'https://team3luna.propulsion-learn.ch']
