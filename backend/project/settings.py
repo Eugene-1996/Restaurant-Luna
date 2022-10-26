@@ -56,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'project.urls'
@@ -163,3 +164,4 @@ EMAIL_HOST_PASSWORD = 'enyukkpoqtqsbsxt'  # os.environ.get('EMAIL_HOST_PASSWORD'
 EMAIL_PORT = 587  # os.environ.get('EMAIL_PORT')
 
 CSRF_TRUSTED_ORIGINS = ['http://138.197.178.222', 'https://team3luna.propulsion-learn.ch']
+CORS_ALLOWED_ORIGINS = ['*']
