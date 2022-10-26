@@ -8,7 +8,7 @@ class User(AbstractUser):
     things_i_love = models.CharField(max_length=250, blank=True)
     description = models.CharField(max_length=250, blank=True)
     avatar = models.ImageField(null=True, blank=True)
-    pass
+    cover = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return f'ID {self.id} : {self.username}'

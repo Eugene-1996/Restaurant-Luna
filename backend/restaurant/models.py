@@ -16,6 +16,7 @@ class Restaurant(models.Model):
     opening_hours = models.CharField(max_length=250, blank=True)
     price_level = models.IntegerField(blank=False, validators=[MaxValueValidator(4), MinValueValidator(1)])
     image = models.ImageField(null=True, blank=True)
+    cover = models.ImageField(null=True, blank=True)
     user = models.ForeignKey(to=User, on_delete=models.CASCADE, related_name='restaurant')
 
     def __str__(self):
