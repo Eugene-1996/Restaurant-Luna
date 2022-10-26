@@ -19,7 +19,7 @@ class UserAdmin(UserAdmin):
         ('Personal info', {'fields': ('first_name', 'last_name', 'phone', 'location', 'description', 'things_i_love')}),
         # ('Permissions', {'fields': ('is_active', 'is_staff', 'is_superuser', 'user_permissions')}),
         ('Important dates', {'fields': ('last_login', 'date_joined')}),
-        # ('Restaurants', {'fields': ('restaurant', 'review', )}),
+        ('Avatar', {'fields': 'avatar'}),
     )
     # fields which are shown when looking at an list of instances
     list_display = ('username', 'email', 'first_name', 'last_name', 'is_staff')
