@@ -45,7 +45,7 @@ class SingleUser(GenericAPIView):
 class SearchRestaurantView(GenericAPIView):
     queryset = ''
 
-    def get(self, request, *args, **kwargs):
+    def post(self, request, *args, **kwargs):
         found_users = Restaurant.objects.filter(name__contains=request.data['search'])
         serializer = RestaurantSerializer(found_users, many=True)
         return Response(serializer.data)
