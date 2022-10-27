@@ -75,3 +75,12 @@ class Rating(GenericAPIView):
             rating += item.rating
         final_rating = rating / len(filtered)
         return Response(str(final_rating))
+
+
+class SelfReviews(GenericAPIView):
+    queryset = ''
+
+    def get(self, request, *args, **kwargs):
+        instance = Review.objects.filter(user=self.request.user)
+        serializer = ReviewSerializer(instance, many=True)
+        return Response(serializer.data)
