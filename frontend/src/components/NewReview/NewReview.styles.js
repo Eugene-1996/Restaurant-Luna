@@ -135,9 +135,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 align-self: center;
-* {
-    border: 1px solid blue;
-}
 
 form {
     width: 60vw;
