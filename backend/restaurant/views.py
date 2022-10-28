@@ -52,7 +52,7 @@ class UserFilterRestaurant(ListAPIView):
     lookup_field = 'id'
 
     def get_queryset(self):
-        return Restaurant.objects.filter(user=self.request.user)
+        return Restaurant.objects.filter(user=self.kwargs['id'])
 
 
 class SelfRestaurants(GenericAPIView):
