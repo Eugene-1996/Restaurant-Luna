@@ -42,7 +42,7 @@ class Validation(GenericAPIView):
         try:
             check_validation = Registration.objects.get(code=code, user__email=email)
             check_validation.user.username = request.data['username']
-            check_validation.user.first_name = request.data['location']
+            check_validation.user.first_name = request.data['first_name']
             # check_validation.user.last_name = request.data['last_name']
             check_validation.user.set_password(request.data['password'])
             check_validation.password_confirm = request.data['password_confirm']
