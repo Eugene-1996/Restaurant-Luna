@@ -3,8 +3,6 @@ A restaurant review app. Group project at SIT Academy.
 
 
 
-
-
 The goal of the exercise was to create the entire project from scratch. We were given UI/UX guidelines and a list of the functionalities to implement. After setting up a server on Digital Ocean and our CI/CD pipelines on GitLab, we built the frontend and backend. The last two days were all about connecting the two. That was an especially good experience in IT team-work.
 
 
